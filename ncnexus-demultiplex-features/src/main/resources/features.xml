@@ -1,0 +1,19 @@
+<features name="mapseq-pipeline-ncnexus-demultiplex-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.2.0">
+
+  <feature name="mapseq-pipeline-ncnexus-demultiplex" version="${project.version}" resolver="(obr)">
+    <bundle>mvn:org.jsoup/com.springsource.org.jsoup/1.5.2</bundle>
+    <bundle>mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-commons/${project.version}</bundle>
+    <bundle>mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-workflow/${project.version}</bundle>
+    <bundle>mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-commands/${project.version}</bundle>
+    <bundle>mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-ws-api/${project.version}</bundle>
+    <bundle>mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-ws-impl/${project.version}</bundle>
+    <bundle start-level="100">mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-executor/${project.version}</bundle>
+    <bundle start-level="100">mvn:edu.unc.mapseq.pipelines.ncnexus-demultiplex/ncnexus-demultiplex-messaging/${project.version}</bundle>
+  </feature>
+
+</features>
+
+
+
+
+
